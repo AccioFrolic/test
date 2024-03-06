@@ -1,0 +1,71 @@
+#piechart {
+    width: 100%;
+    height: inherit;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-image: conic-gradient(pink 60deg,
+            lightblue 60deg 100deg,
+            blue 100deg 180deg,
+            orange 0);
+}
+
+.bage {
+    /* display: inline-block; */
+    position: relative;
+    top: 45%;
+    width: 50%;
+}
+
+.per1,.per2,.per3,.per4{
+    position: absolute;
+    width: 80%;
+    left: 20%;
+    transform-origin: right center;
+}
+.per1{
+    transform: rotate(0deg)
+}
+.per2{
+    transform: rotate(-130deg)
+}
+.per3{
+    transform: rotate(-190deg)
+}
+.per4{
+    transform: rotate(-240deg)
+}
+.per1>div{
+    width: 10%;
+    transform-origin: right center;
+    transform: rotate(0deg)
+}
+.per2>div{
+    width: 10%;
+    transform-origin: right center;
+    transform: rotate(130deg)
+}
+.per3>div{
+    width: 10%;
+    transform-origin: right center;
+    transform: rotate(190deg)
+}
+.per4>div{
+    width: 10%;
+    transform-origin: right center;
+    transform: rotate(240deg)
+}
+footer a{
+    text-decoration: none;
+}
+.fa-face-frown-open{
+    color: orange;
+}
+.fa-face-smile{
+    color: pink;
+}
+.fa-face-dizzy{
+    color: lightblue;
+}
+.fa-face-tired{
+    color: blue;
+}
